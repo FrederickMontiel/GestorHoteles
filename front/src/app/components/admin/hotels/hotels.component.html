@@ -1,0 +1,29 @@
+<app-adminheader></app-adminheader>
+<div class="divOptions">
+    <div class="divText">
+        <h1>Hoteles:</h1>
+    </div>
+    <button routerLink="/admin/hotel/add" class="botonAdd">Agregar hotel</button>
+</div>
+<div class="divAllHotel">
+    <table>
+        <tr class="initTr">
+            <td class="initTd">id</td>
+            <td class="initTd">Nombre</td>
+            <td class="initTd">Descripcion</td>
+            <td class="initTd">PBX</td>
+            <td class="initTd">Codigo Postal</td>
+            <td class="initTd">Direccion</td>
+        </tr>
+    </table>
+    <table *ngFor="let hotel of hoteles">
+        <tr>
+            <td>{{ hotel._id }}</td>
+            <td>{{ hotel.nombreHotel }}</td>
+            <td>{{ hotel.descripcionHotel }}</td>
+            <td>{{ hotel.pbxHotel }}</td>
+            <td>{{ hotel.cpHotel }}</td>
+            <td>{{ hotel.direccionHotel }}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr{
+    border: solid 0.5px rgb(179, 179, 179);
+}
+
+table td{
+    width: 18%;
+    padding: 3px 10px;
+}
+
+.initTr{
+    background: rgb(114, 110, 110);
+    color: white;
+}
+
+.initTd{
+    background: #000;
+}

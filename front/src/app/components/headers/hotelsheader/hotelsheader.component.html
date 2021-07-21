@@ -1,0 +1,17 @@
+<header>
+    <div class="divIconWebPng">
+        <a href="./">
+            <img src="https://i.ibb.co/KXyzJSy/icon.png" class="iconWebPng">
+        </a>
+    </div>
+    <div class="divFormSearchProducts">
+        <input type="search" onkeyup="searchHotel(this)" placeholder="Buscar" class="inputSearchProduct">
+        <i class="material-icons iconButtonSearch">search</i>
+    </div>
+    <div class="listaSugerencias" style="display: none;" onmouseout="esconderBusqueda()" onmousemove="mostrarBusqueda()" onmouseenter="mostrarBusqueda()">
+    </div>
+    <nav class="navMenuNavigate">
+        <a routerLink="/user/profile" class="notIcon niSesion"><div><i class="material-icons">account_circle</i><span>Perfil</span></div></a>
+        <a routerLink="/logout" class="notIcon niReg"><div><i class="material-icons">logout</i><span>Salir</span></div></a>
+    </nav>
+</header>

@@ -1,0 +1,21 @@
+<app-adminheader></app-adminheader>
+<div class="divAllUsers">
+    <table>
+        <tr class="initTr">
+            <td class="initTd">id</td>
+            <td class="initTd">Usuario</td>
+            <td class="initTd">Nombre</td>
+            <td class="initTd">Correo</td>
+            <td class="initTd">Rol</td>
+        </tr>
+    </table>
+    <table *ngFor="let user of usuarios">
+        <tr>
+            <td>{{ user._id }}</td>
+            <td>{{ user.apodoUsuario }}</td>
+            <td>{{ user.nombreUsuario }}</td>
+            <td>{{ user.correoUsuario }}</td>
+            <td>{{ user.rolUsuario }}</td>
+        </tr>
+    </table>
+</div>

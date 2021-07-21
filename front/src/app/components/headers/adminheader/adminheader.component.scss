@@ -1,0 +1,257 @@
+header{
+    background: #393e46;
+    border-bottom: solid #ffdd67 2px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:   1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navMenuNavigate{
+    grid-area: nav;
+}
+
+.navMenuNavigate a{
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.navMenuNavigate a span{
+    display: block;
+    padding: 0 3px;
+    font-size: 13px;
+}
+
+.navMenuNavigate a i{
+    display: block;
+}
+
+.navMenuNavigate .onlyShopIcon i{
+    font-size: 40px;
+    color: #ffdd67;
+}
+
+.divCategories{
+    width: 100%;
+    background: rgb(49, 50, 56);
+}
+
+.divCategories .categoria{
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .5s;
+    color: white;
+    border: solid 1px rgba(49, 50, 56, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 801px){
+    header{
+        grid-template-areas:    "img nda fbu fbu fbu fbu fbu fbu nav nav nav nav";
+        height: 60px;
+    }
+
+    .divCategories .categoria:hover{
+        border-left: solid 1px white;
+        border-right: solid 1px white;
+        border-radius: 0;
+    }
+
+    .navMenuNavigate{
+        text-align: end;
+    }
+
+    .navMenuNavigate a{
+        display: inline-flex;
+        min-height: 42px;
+        padding: 9px 10px;
+    }
+
+    .navMenuNavigate a:hover {
+        transition: 1s;
+        background: #464d56;
+    }
+    
+    .navMenuNavigate .notIcon{
+        position: relative;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .navMenuNavigate .botonMenuHeader{
+        display: none;
+    }
+
+    .divCategories{
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: inline-flex;
+    }
+
+    .divCategoriasDos::-webkit-scrollbar{
+        background: rgb(255, 202, 27);
+        height: 8px;
+    }
+    .divCategoriasDos::-webkit-scrollbar-thumb {
+        background: rgb(212, 178, 65);
+        border-radius: 4px;
+    }
+
+    .divCategoriasDos::-webkit-scrollbar-track{
+        background: #ffdd67;
+        border-radius: 4px;
+    }
+
+    .divCategories .divCategoriasDos{
+        display: inline-flex;
+        overflow-y: hidden;
+        max-height: 48px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    header{
+        grid-template-areas:    "img fbu fbu fbu fbu fbu fbu fbu fbu fbu fbu fbu"
+                                "nav nav nav nav nav nav nav nav nav nav nav nav";
+    }
+
+    .navMenuNavigate{
+        display: grid;
+        grid-template-columns:   1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:    "mor nd1 nd1 nd1 nd1 min mon nd2 nd2 nd2 nd2 car";
+        background: #474b51;
+        height: 64px;
+        text-align: right;
+    }
+
+    .navMenuNavigate .notIcon{
+        color: white;
+        font-weight: bolder;
+    }
+
+    .navMenuNavigate .niSesion{
+        grid-area: min;
+    }
+
+    .navMenuNavigate .niReg{
+        grid-area: mon;
+    }
+
+    .navMenuNavigate a{
+        display: inline-flex;
+    }
+
+    .navMenuNavigate .notIcon{
+        color: white;
+        font-weight: bolder;
+        padding: 0 5px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenuNavigate .onlyShopIcon{
+        grid-area: car;
+    }
+
+    .navMenuNavigate .onlyShopIcon div{
+        background-color: rgb(62, 66, 71);
+        height: 63px;
+        width: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenuNavigate .botonMenuHeader i{
+        font-size: 50px;
+    }
+
+    .navMenuNavigate .botonMenuHeader{
+        grid-area: mor;
+        background-color: rgb(62, 66, 71);
+        color: white;
+        font-weight: bolder;
+        height: 64px;
+        width: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenuNavigate a span{
+        font-size: 15px;
+    }
+
+    .navMenuNavigate .notIcon i{
+        font-size: 30px;
+    }
+
+    .divCategoriasDos{
+        padding: 5px 0;
+    }
+
+    .divCategories{
+        height: 0;
+    }
+}
+
+header .iconWebPng{
+    grid-area: img;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.divFormSearchProducts{
+    height: 60px;
+    grid-area: fbu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.selectCategorySearch{
+    background: #ffdd67;
+    border: none;
+    color: #393e46;
+    font-weight: 800;
+    max-width: 80px;
+    height: 32px;
+    padding: 3px 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+header .iconButtonSearch{
+    background: #ffdd67;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    cursor: pointer;
+    color: #393e46;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+}
+
+header .iconButtonSearch:hover{
+    background: #ffe380;
+    transition: 0.7s;
+}
+
+header .inputSearchProduct{
+    height: 32px;
+    padding: 2px 10px 0 20px;
+    border: none;
+    font-weight: bolder;
+    width: 90%;
+    border-radius: 5px 0 0 5px;
+}

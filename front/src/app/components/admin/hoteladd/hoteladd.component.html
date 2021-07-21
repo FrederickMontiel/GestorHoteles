@@ -1,0 +1,17 @@
+<app-adminheader></app-adminheader>
+<div class="dobleBody">
+    <h1>Agregar Hotel</h1>
+    <form>
+        <br>
+        <input type="text" name="idUsuario" [(ngModel)]="modelData.idUsuario" placeholder="Id usuario administrador del hotel">
+        <br>
+        <input type="text" name="nombreHotel" [(ngModel)]="modelData.nombreHotel" placeholder="Nombre">
+        <input type="text" name="imagenHotel" [(ngModel)]="modelData.imagenHotel" placeholder="Imagen">
+        <input type="text" name="pbxHotel" [(ngModel)]="modelData.pbxHotel" placeholder="Telefono">
+        <input type="text" name="paisHotel" [(ngModel)]="modelData.paisHotel" placeholder="País">
+        <input type="text" name="cpHotel" [(ngModel)]="modelData.cpHotel" placeholder="Codigo postal">
+        <input type="text" name="direccionHotel" [(ngModel)]="modelData.direccionHotel" placeholder="Dirección">
+        <textarea name="descripcionHotel" [(ngModel)]="modelData.descripcionHotel" placeholder="Descripción del hotel" id="" cols="30" rows="10"></textarea>
+        <button class="btnAgregar" (click)="agregar()">Agregar hotel</button>
+    </form>
+</div>

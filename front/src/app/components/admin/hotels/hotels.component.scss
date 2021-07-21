@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr{
+    border: solid 0.5px rgb(179, 179, 179);
+}
+
+table td{
+    width: 18%;
+    padding: 3px 10px;
+}
+
+.initTr{
+    background: rgb(114, 110, 110);
+    font-weight: bolder;
+}
+
+.initTd{
+    background: #ff6060;
+    border: solid 0.5px #ff6060;
+    color: rgb(41, 41, 41);
+}
+
+.botonAdd{
+    position:  absolute;
+    top: 70px;
+    right: 30px;
+    background: #ffdd67;
+    font-weight: 900;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(63, 63, 63);
+}
+
+.divText{
+    display: inline-block;
+}

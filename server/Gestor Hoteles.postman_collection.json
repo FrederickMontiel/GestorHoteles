@@ -1,0 +1,890 @@
+{
+	"info": {
+		"_postman_id": "5f2aed6d-f95e-4a0d-89d8-7350d37845a7",
+		"name": "Gestor Hoteles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/listUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Hotel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreHotel",
+							"value": "Madison",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/searchHotel",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searchHotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Hoteles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/listHotels",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listHotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "correoUsuario",
+							"value": "diegosiney@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "claveUsuario",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "apodoUsuario",
+							"value": "DiegoSiney",
+							"type": "text"
+						},
+						{
+							"key": "nombreUsuario",
+							"value": "Diego",
+							"type": "text"
+						},
+						{
+							"key": "correoUsuario",
+							"value": "diegosiney@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "claveUsuario",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "fechaNacUsuario",
+							"value": "2006/03/15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/saveUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"saveUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "apodoUsuario",
+							"value": "Randall123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editUser/60a2ac0efe4f7b2d385be989",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editUser",
+						"60a2ac0efe4f7b2d385be989"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/deleteUser/60a2ac0efe4f7b2d385be989",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteUser",
+						"60a2ac0efe4f7b2d385be989"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calificar Hotel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuarioCalificacion",
+							"value": "60a2ad42d12ba730c879b5ee",
+							"type": "text"
+						},
+						{
+							"key": "numeroCalificacion",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addCalificationidCalificacion/60a7e71cc036760da8e3d8a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addCalificationidCalificacion",
+						"60a7e71cc036760da8e3d8a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Calificacion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuarioCalificacion",
+							"value": "60a2ad42d12ba730c879b5ee",
+							"type": "text"
+						},
+						{
+							"key": "numeroCalificacion",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editCalification/60a7e71cc036760da8e3d8a5/60a949a5e10ac332b46b4979",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editCalification",
+						"60a7e71cc036760da8e3d8a5",
+						"60a949a5e10ac332b46b4979"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Calificacion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteCalification/60a7e71cc036760da8e3d8a5/60a949a5e10ac332b46b4979",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteCalification",
+						"60a7e71cc036760da8e3d8a5",
+						"60a949a5e10ac332b46b4979"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreHotel",
+							"value": "Madisonss",
+							"type": "text"
+						},
+						{
+							"key": "descripcionHotel",
+							"value": "Un hotel de lujo",
+							"type": "text"
+						},
+						{
+							"key": "pbxHotel",
+							"value": "123123123",
+							"type": "text"
+						},
+						{
+							"key": "paisHotel",
+							"value": "Guatemala",
+							"type": "text"
+						},
+						{
+							"key": "cpHotel",
+							"value": "502",
+							"type": "text"
+						},
+						{
+							"key": "direccionHotel",
+							"value": "Zona 8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addHotel",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addHotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Hotel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreHotel",
+							"value": "Madison2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateHotel/60a2af43f1d5d83390ca4e9c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateHotel",
+						"60a2af43f1d5d83390ca4e9c"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Hotel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteHotel/60a2b060afbb9d1c58776d36",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteHotel",
+						"60a2b060afbb9d1c58776d36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Habitacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcionHabitacion",
+							"value": "Lujos XD",
+							"type": "text"
+						},
+						{
+							"key": "categoriaHabitacion",
+							"value": "Presidencial",
+							"type": "text"
+						},
+						{
+							"key": "costoHabitacion",
+							"value": "1500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addRoom/60a7e71cc036760da8e3d8a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addRoom",
+						"60a7e71cc036760da8e3d8a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Habitacion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "categoriaHabitacion",
+							"value": "Suit Premiuma",
+							"type": "text"
+						},
+						{
+							"key": "descripcionHabitacion",
+							"value": "asdasdasdasdasdasd",
+							"type": "text"
+						},
+						{
+							"key": "costoHabitacion",
+							"value": "15001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editRoom/60a7df4b8906413e9824687a/60a7e2b96d0ad330687f6128",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editRoom",
+						"60a7df4b8906413e9824687a",
+						"60a7e2b96d0ad330687f6128"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Habitacion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/deleteRoom/60a7e7bcd3cb0509902fc5bc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteRoom",
+						"60a7e7bcd3cb0509902fc5bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Evento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreEvento",
+							"value": "Concierto",
+							"type": "text"
+						},
+						{
+							"key": "descripcionEvento",
+							"value": "Ricardo Arjona",
+							"type": "text"
+						},
+						{
+							"key": "fechaHoraEvento",
+							"value": "2020-01-10T16:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "maximoEvento",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addEvent/60a7e71cc036760da8e3d8a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addEvent",
+						"60a7e71cc036760da8e3d8a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Evento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreEvento",
+							"value": "Concierto",
+							"type": "text"
+						},
+						{
+							"key": "descripcionEvento",
+							"value": "La orja de van gogh",
+							"type": "text"
+						},
+						{
+							"key": "fechaHoraEvento",
+							"value": "2020-01-10T16:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "maximoEvento",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editEvent/60a7e71cc036760da8e3d8a5/60a93b9f25f0d72cc8421d3f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editEvent",
+						"60a7e71cc036760da8e3d8a5",
+						"60a93b9f25f0d72cc8421d3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Evento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/deleteEvent/60a93b9f25f0d72cc8421d3f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteEvent",
+						"60a93b9f25f0d72cc8421d3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Objeto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreObjeto",
+							"value": "Television 60x150",
+							"type": "text"
+						},
+						{
+							"key": "descripcionObjeto",
+							"value": "Television LG de 40 pulgadas",
+							"type": "text"
+						},
+						{
+							"key": "precioObjeto",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addThing/60a7e71cc036760da8e3d8a5/60a92f453c603e18dc79f10c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addThing",
+						"60a7e71cc036760da8e3d8a5",
+						"60a92f453c603e18dc79f10c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Objeto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreObjeto",
+							"value": "Television 60x161",
+							"type": "text"
+						},
+						{
+							"key": "descripcionObjeto",
+							"value": "Television LG de 40 pulgadas",
+							"type": "text"
+						},
+						{
+							"key": "precioObjeto",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editThing/60a92f453c603e18dc79f10c/60a9360e8ea07f3a00cb3c72",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editThing",
+						"60a92f453c603e18dc79f10c",
+						"60a9360e8ea07f3a00cb3c72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Objeto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteThing/60a9360e8ea07f3a00cb3c72",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteThing",
+						"60a9360e8ea07f3a00cb3c72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Denegar Peticion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar peticion usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "entryDate",
+							"value": "2021-04-24",
+							"type": "text"
+						},
+						{
+							"key": "departureDate",
+							"value": "2021-04-26",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addRequest/6081b4a98e9f680a900495cd/6086eb0ad843d932a42af210",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addRequest",
+						"6081b4a98e9f680a900495cd",
+						"6086eb0ad843d932a42af210"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aceptar Peticion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/acceptRequest/6081b4a98e9f680a900495cd/6086ec409806e206dcdf2ad5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"acceptRequest",
+						"6081b4a98e9f680a900495cd",
+						"6086ec409806e206dcdf2ad5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Objeto Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombreObjeto",
+							"value": "Television 60x150",
+							"type": "text"
+						},
+						{
+							"key": "descripcionObjeto",
+							"value": "Television LG de 40 pulgadas",
+							"type": "text"
+						},
+						{
+							"key": "precioObjeto",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addThing/60a7e71cc036760da8e3d8a5/60a92f453c603e18dc79f10c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addThing",
+						"60a7e71cc036760da8e3d8a5",
+						"60a92f453c603e18dc79f10c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calificar Hotel Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuarioCalificacion",
+							"value": "60a2ad42d12ba730c879b5ee",
+							"type": "text"
+						},
+						{
+							"key": "numeroCalificacion",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addCalification/60a7e71cc036760da8e3d8a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addCalification",
+						"60a7e71cc036760da8e3d8a5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
